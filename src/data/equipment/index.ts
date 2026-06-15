@@ -1,0 +1,95 @@
+import type { MowerStats, WeedEaterStats } from '@/types';
+
+export const MOWERS: MowerStats[] = [
+  {
+    tier: 1,
+    name: 'Push Reel Mower',
+    speed: 60,
+    cutWidth: 18,
+    staminaDrain: 1.4,
+    lineTolerance: 0.5,
+    cutQuality: 0.65,
+    color: '#6B7280',
+    unlockCost: 0,
+  },
+  {
+    tier: 2,
+    name: 'Gas Self-Propelled',
+    speed: 90,
+    cutWidth: 22,
+    staminaDrain: 1.1,
+    lineTolerance: 0.65,
+    cutQuality: 0.80,
+    color: '#DC2626',
+    unlockCost: 850,
+  },
+  {
+    tier: 3,
+    name: 'Zero-Turn Rider',
+    speed: 140,
+    cutWidth: 42,
+    staminaDrain: 0.7,
+    lineTolerance: 0.80,
+    cutQuality: 0.90,
+    color: '#1D4ED8',
+    unlockCost: 4200,
+  },
+  {
+    tier: 4,
+    name: 'Commercial Rider',
+    speed: 180,
+    cutWidth: 60,
+    staminaDrain: 0.5,
+    lineTolerance: 0.92,
+    cutQuality: 0.98,
+    color: '#15803D',
+    unlockCost: 12000,
+  },
+];
+
+export const WEED_EATERS: WeedEaterStats[] = [
+  {
+    tier: 1,
+    name: 'Scythe',
+    speed: 30,
+    trimWidth: 8,
+    staminaDrain: 1.8,
+    unlockCost: 0,
+    color: '#78716C',
+  },
+  {
+    tier: 2,
+    name: 'Corded Electric',
+    speed: 55,
+    trimWidth: 13,
+    staminaDrain: 1.2,
+    unlockCost: 120,
+    color: '#F59E0B',
+  },
+  {
+    tier: 3,
+    name: 'Cordless Battery',
+    speed: 75,
+    trimWidth: 15,
+    staminaDrain: 0.9,
+    unlockCost: 380,
+    color: '#7C3AED',
+  },
+  {
+    tier: 4,
+    name: 'Industrial Cordless',
+    speed: 110,
+    trimWidth: 18,
+    staminaDrain: 0.6,
+    unlockCost: 1200,
+    color: '#0369A1',
+  },
+];
+
+export const INVENTORY_ITEMS = [
+  { id: 'electrolyte', name: 'Electrolyte Drink', cost: 4, staminaRestore: 0, hydrationRestore: 50 },
+  { id: 'protein_bar', name: 'Protein Bar', cost: 3, staminaRestore: 35, hydrationRestore: 5 },
+  { id: 'breathable_shirt', name: 'Breathable Work Shirt', cost: 28, staminaRestore: 0, hydrationRestore: 0, passiveDrainReduction: 0.1 },
+  { id: 'cooling_vest', name: 'Cooling Vest', cost: 55, staminaRestore: 0, hydrationRestore: 0, passiveDrainReduction: 0.18 },
+  { id: 'break_booster', name: 'Break Time Booster', cost: 6, staminaRestore: 60, hydrationRestore: 30, duration: 30 },
+];
