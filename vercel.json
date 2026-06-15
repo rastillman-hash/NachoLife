@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "installCommand": "cd nacho-life && npm install",
+  "buildCommand": "cd nacho-life && npm run build",
+  "outputDirectory": "nacho-life/.next"
+}
